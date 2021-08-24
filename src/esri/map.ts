@@ -5,11 +5,11 @@ import Map from "@arcgis/core/Map";
 import esriConfig from "@arcgis/core/config";
 
 export function initializeMap(ref: HTMLDivElement) {
-  // create from a web map?
+  
   const map = new Map({
-    basemap: "arcgis-topographic" // Basemap layer service
+    basemap: "topo-vector" // Basemap layer service
   });
-
+  
   const view = new MapView({
     container: ref,
     map: map,
